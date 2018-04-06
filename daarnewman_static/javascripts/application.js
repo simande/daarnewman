@@ -64,7 +64,9 @@ var Simande = window.Simande || {};
 			
 			e.preventDefault();
 			
-			$('.header_navigation').fadeOut(100);
+			$('.header_navigation').fadeOut(100, function() {
+				$(this).removeAttr('style');
+			});
 			
 		});
 		
